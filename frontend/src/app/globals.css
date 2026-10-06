@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* Brand accent: a warm coral-red. Neutrals come from Tailwind's zinc scale. */
+  --color-brand-50: oklch(0.971 0.014 17);
+  --color-brand-100: oklch(0.936 0.032 17.7);
+  --color-brand-200: oklch(0.885 0.062 18.3);
+  --color-brand-300: oklch(0.808 0.114 19.5);
+  --color-brand-400: oklch(0.711 0.166 22.2);
+  --color-brand-500: oklch(0.645 0.2 24.5);
+  --color-brand-600: oklch(0.585 0.215 26);
+  --color-brand-700: oklch(0.505 0.19 27.5);
+  --color-brand-800: oklch(0.444 0.161 26.9);
+  --color-brand-900: oklch(0.396 0.133 25.7);
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(24 24 27 / 0.04), 0 4px 16px -4px rgb(24 24 27 / 0.08);
+  --shadow-pop: 0 10px 38px -10px rgb(24 24 27 / 0.25), 0 10px 20px -15px rgb(24 24 27 / 0.15);
+
+  --animate-fade-in: fade-in 150ms ease-out;
+  --animate-slide-in-right: slide-in-right 200ms ease-out;
+  --animate-slide-in-left: slide-in-left 200ms ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-white text-zinc-900 antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
+
+/* Leaflet: keep map panes below sticky headers and dialogs. */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 0;
+}
+
+.price-pin {
+  @apply rounded-full border border-white bg-zinc-900 px-2 py-0.5 text-xs font-semibold whitespace-nowrap text-white shadow-md;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.price-pin[data-active="true"] {
+  @apply scale-110 bg-brand-600;
+}
+
+.location-pin {
+  @apply size-7 rounded-full border-4 border-white bg-brand-600 shadow-lg;
+  transform: translate(-50%, -100%);
+}

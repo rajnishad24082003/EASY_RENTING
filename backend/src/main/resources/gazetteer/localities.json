@@ -1,0 +1,108 @@
+{
+  "cities": [
+    {
+      "name": "Bengaluru", "state": "Karnataka", "aliases": ["bengaluru", "bangalore", "blr", "bengalooru"],
+      "localities": [
+        { "name": "Koramangala", "latitude": 12.9352, "longitude": 77.6245, "aliases": ["kormangala", "koramangla"] },
+        { "name": "HSR Layout", "latitude": 12.9116, "longitude": 77.6474, "aliases": ["hsr"] },
+        { "name": "Indiranagar", "latitude": 12.9784, "longitude": 77.6408, "aliases": ["indira nagar"] },
+        { "name": "Whitefield", "latitude": 12.9698, "longitude": 77.7500, "aliases": ["white field"] },
+        { "name": "Marathahalli", "latitude": 12.9569, "longitude": 77.7011, "aliases": ["marathalli", "marthahalli"] },
+        { "name": "BTM Layout", "latitude": 12.9166, "longitude": 77.6101, "aliases": ["btm"] },
+        { "name": "Electronic City", "latitude": 12.8452, "longitude": 77.6602, "aliases": ["e city", "ecity", "electronics city"] },
+        { "name": "Bellandur", "latitude": 12.9304, "longitude": 77.6784, "aliases": [] },
+        { "name": "Jayanagar", "latitude": 12.9250, "longitude": 77.5938, "aliases": ["jaya nagar"] },
+        { "name": "JP Nagar", "latitude": 12.9063, "longitude": 77.5857, "aliases": ["j p nagar", "jayaprakash nagar"] },
+        { "name": "Malleshwaram", "latitude": 13.0035, "longitude": 77.5710, "aliases": ["malleswaram"] },
+        { "name": "Hebbal", "latitude": 13.0358, "longitude": 77.5970, "aliases": [] },
+        { "name": "Sarjapur Road", "latitude": 12.9100, "longitude": 77.6870, "aliases": ["sarjapur"] },
+        { "name": "Banashankari", "latitude": 12.9255, "longitude": 77.5468, "aliases": [] },
+        { "name": "Yelahanka", "latitude": 13.1007, "longitude": 77.5963, "aliases": [] }
+      ]
+    },
+    {
+      "name": "Mumbai", "state": "Maharashtra", "aliases": ["mumbai", "bombay"],
+      "localities": [
+        { "name": "Andheri", "latitude": 19.1197, "longitude": 72.8464, "aliases": ["andheri west", "andheri east"] },
+        { "name": "Powai", "latitude": 19.1176, "longitude": 72.9060, "aliases": ["hiranandani powai"] },
+        { "name": "Bandra", "latitude": 19.0596, "longitude": 72.8295, "aliases": ["bandra west", "bandra east"] },
+        { "name": "Juhu", "latitude": 19.1075, "longitude": 72.8263, "aliases": [] },
+        { "name": "Goregaon", "latitude": 19.1663, "longitude": 72.8526, "aliases": ["goregaon west", "goregaon east"] },
+        { "name": "Malad", "latitude": 19.1874, "longitude": 72.8484, "aliases": ["malad west"] },
+        { "name": "Lower Parel", "latitude": 18.9953, "longitude": 72.8302, "aliases": [] },
+        { "name": "Chembur", "latitude": 19.0522, "longitude": 72.9005, "aliases": [] },
+        { "name": "Worli", "latitude": 19.0176, "longitude": 72.8172, "aliases": [] },
+        { "name": "Borivali", "latitude": 19.2307, "longitude": 72.8567, "aliases": ["borivli"] }
+      ]
+    },
+    {
+      "name": "Pune", "state": "Maharashtra", "aliases": ["pune", "poona"],
+      "localities": [
+        { "name": "Hinjewadi", "latitude": 18.5913, "longitude": 73.7389, "aliases": ["hinjawadi", "hinjewadi phase 1"] },
+        { "name": "Baner", "latitude": 18.5590, "longitude": 73.7868, "aliases": [] },
+        { "name": "Kharadi", "latitude": 18.5515, "longitude": 73.9348, "aliases": [] },
+        { "name": "Koregaon Park", "latitude": 18.5362, "longitude": 73.8940, "aliases": [] },
+        { "name": "Viman Nagar", "latitude": 18.5679, "longitude": 73.9143, "aliases": ["vimannagar"] },
+        { "name": "Wakad", "latitude": 18.5987, "longitude": 73.7650, "aliases": [] },
+        { "name": "Aundh", "latitude": 18.5580, "longitude": 73.8075, "aliases": [] },
+        { "name": "Kothrud", "latitude": 18.5074, "longitude": 73.8077, "aliases": [] },
+        { "name": "Hadapsar", "latitude": 18.5089, "longitude": 73.9260, "aliases": [] },
+        { "name": "Magarpatta", "latitude": 18.5150, "longitude": 73.9290, "aliases": ["magarpatta city"] }
+      ]
+    },
+    {
+      "name": "Hyderabad", "state": "Telangana", "aliases": ["hyderabad", "hyd", "secunderabad"],
+      "localities": [
+        { "name": "Gachibowli", "latitude": 17.4401, "longitude": 78.3489, "aliases": [] },
+        { "name": "HITEC City", "latitude": 17.4435, "longitude": 78.3772, "aliases": ["hitech city", "hi-tech city", "hitec"] },
+        { "name": "Madhapur", "latitude": 17.4483, "longitude": 78.3915, "aliases": [] },
+        { "name": "Kondapur", "latitude": 17.4698, "longitude": 78.3578, "aliases": [] },
+        { "name": "Banjara Hills", "latitude": 17.4156, "longitude": 78.4347, "aliases": [] },
+        { "name": "Jubilee Hills", "latitude": 17.4325, "longitude": 78.4071, "aliases": [] },
+        { "name": "Kukatpally", "latitude": 17.4849, "longitude": 78.4138, "aliases": ["kphb"] },
+        { "name": "Manikonda", "latitude": 17.4021, "longitude": 78.3866, "aliases": [] },
+        { "name": "Begumpet", "latitude": 17.4447, "longitude": 78.4664, "aliases": [] }
+      ]
+    },
+    {
+      "name": "Delhi", "state": "Delhi", "aliases": ["delhi", "new delhi", "ncr", "delhi ncr"],
+      "localities": [
+        { "name": "Saket", "latitude": 28.5245, "longitude": 77.2066, "aliases": [] },
+        { "name": "Hauz Khas", "latitude": 28.5494, "longitude": 77.2001, "aliases": [] },
+        { "name": "Dwarka", "latitude": 28.5921, "longitude": 77.0460, "aliases": [] },
+        { "name": "Lajpat Nagar", "latitude": 28.5677, "longitude": 77.2433, "aliases": [] },
+        { "name": "Vasant Kunj", "latitude": 28.5293, "longitude": 77.1539, "aliases": [] },
+        { "name": "Rohini", "latitude": 28.7383, "longitude": 77.0822, "aliases": [] }
+      ]
+    },
+    {
+      "name": "Gurugram", "state": "Haryana", "aliases": ["gurugram", "gurgaon", "ggn"],
+      "localities": [
+        { "name": "DLF Phase 3", "latitude": 28.4931, "longitude": 77.0935, "aliases": ["dlf phase iii", "dlf 3"] },
+        { "name": "Golf Course Road", "latitude": 28.4506, "longitude": 77.0971, "aliases": [] },
+        { "name": "Sohna Road", "latitude": 28.4089, "longitude": 77.0418, "aliases": [] },
+        { "name": "Cyber City", "latitude": 28.4950, "longitude": 77.0890, "aliases": ["cybercity"] }
+      ]
+    },
+    {
+      "name": "Noida", "state": "Uttar Pradesh", "aliases": ["noida"],
+      "localities": [
+        { "name": "Sector 62", "latitude": 28.6270, "longitude": 77.3727, "aliases": ["noida sector 62"] },
+        { "name": "Sector 18", "latitude": 28.5708, "longitude": 77.3261, "aliases": ["noida sector 18"] },
+        { "name": "Sector 137", "latitude": 28.5114, "longitude": 77.4069, "aliases": ["noida sector 137"] }
+      ]
+    },
+    {
+      "name": "Chennai", "state": "Tamil Nadu", "aliases": ["chennai", "madras"],
+      "localities": [
+        { "name": "Adyar", "latitude": 13.0012, "longitude": 80.2565, "aliases": [] },
+        { "name": "Velachery", "latitude": 12.9815, "longitude": 80.2180, "aliases": [] },
+        { "name": "T Nagar", "latitude": 13.0418, "longitude": 80.2341, "aliases": ["t. nagar", "thyagaraya nagar"] },
+        { "name": "Anna Nagar", "latitude": 13.0850, "longitude": 80.2101, "aliases": [] },
+        { "name": "Sholinganallur", "latitude": 12.9010, "longitude": 80.2279, "aliases": ["omr"] },
+        { "name": "Porur", "latitude": 13.0382, "longitude": 80.1565, "aliases": [] },
+        { "name": "Guindy", "latitude": 13.0067, "longitude": 80.2206, "aliases": [] }
+      ]
+    }
+  ]
+}

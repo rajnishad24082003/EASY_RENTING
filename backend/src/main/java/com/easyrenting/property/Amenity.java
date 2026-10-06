@@ -1,0 +1,6 @@
+package com.easyrenting.property;
+
+public enum Amenity {
+    PARKING, LIFT, POWER_BACKUP, GYM, SWIMMING_POOL, SECURITY, WIFI, AC, GAS_PIPELINE, CLUB_HOUSE, PLAY_AREA,
+    PET_FRIENDLY, WASHING_MACHINE, FRIDGE
+}

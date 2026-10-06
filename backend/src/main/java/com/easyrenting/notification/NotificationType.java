@@ -1,0 +1,13 @@
+package com.easyrenting.notification;
+
+public enum NotificationType {
+    VISIT_REQUESTED,
+    VISIT_CONFIRMED,
+    VISIT_REJECTED,
+    VISIT_RESCHEDULED,
+    VISIT_CANCELLED,
+    VISIT_COMPLETED,
+    VERIFICATION_APPROVED,
+    VERIFICATION_REJECTED,
+    NEW_MESSAGE
+}

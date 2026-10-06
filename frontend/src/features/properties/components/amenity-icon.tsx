@@ -1,0 +1,35 @@
+import {
+  AirVent,
+  ArrowUpDown,
+  BatteryCharging,
+  Car,
+  Dumbbell,
+  Flame,
+  PawPrint,
+  Refrigerator,
+  ShieldCheck,
+  Shirt,
+  Smile,
+  Users,
+  Waves,
+  Wifi,
+  type LucideIcon,
+} from "lucide-react";
+import type { Amenity } from "@/lib/api/types";
+
+export const AMENITY_ICONS: Record<Amenity, LucideIcon> = {
+  PARKING: Car,
+  LIFT: ArrowUpDown,
+  POWER_BACKUP: BatteryCharging,
+  GYM: Dumbbell,
+  SWIMMING_POOL: Waves,
+  SECURITY: ShieldCheck,
+  WIFI: Wifi,
+  AC: AirVent,
+  GAS_PIPELINE: Flame,
+  CLUB_HOUSE: Users,
+  PLAY_AREA: Smile,
+  PET_FRIENDLY: PawPrint,
+  WASHING_MACHINE: Shirt,
+  FRIDGE: Refrigerator,
+};
