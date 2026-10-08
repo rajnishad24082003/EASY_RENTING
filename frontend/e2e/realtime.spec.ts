@@ -56,16 +56,19 @@ test.describe("real-time tenant ↔ owner flow", () => {
 
     // Owner sees the message, then the tenant's follow-up arrives over WebSocket.
     await owner.goto(conversationPath);
-    await expect(owner.getByText("Hi! Is this flat still available?")).toBeVisible();
+    // The text also appears in the conversation-list preview, so scope to the thread.
+    const ownerThread = owner.getByRole("log", { name: "Messages" });
+    const tenantThread = tenant.getByRole("log", { name: "Messages" });
+    await expect(ownerThread.getByText("Hi! Is this flat still available?")).toBeVisible();
     const followUp = `Is parking included? (${stamp})`;
     await tenant.getByPlaceholder("Type a message…").fill(followUp);
     await tenant.getByRole("button", { name: "Send message" }).click();
-    await expect(owner.getByText(followUp)).toBeVisible({ timeout: 10_000 });
+    await expect(ownerThread.getByText(followUp)).toBeVisible({ timeout: 10_000 });
 
     const reply = `Yes, one covered slot. (${stamp})`;
     await owner.getByPlaceholder("Type a message…").fill(reply);
     await owner.getByRole("button", { name: "Send message" }).click();
-    await expect(tenant.getByText(reply)).toBeVisible({ timeout: 10_000 });
+    await expect(tenantThread.getByText(reply)).toBeVisible({ timeout: 10_000 });
 
     // Tenant requests a visit for tomorrow.
     await tenant.goto(`/properties/${propertyId}`);

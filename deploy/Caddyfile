@@ -1,0 +1,15 @@
+# Single public hostname. Caddy obtains and renews the HTTPS certificate automatically.
+{$SITE_HOST} {
+	encode zstd gzip
+
+	# WebSocket (chat, notifications) and API docs go straight to Spring Boot.
+	@backend path /ws /ws/* /swagger-ui.html /swagger-ui/* /v3/api-docs /v3/api-docs/*
+	handle @backend {
+		reverse_proxy backend:8080
+	}
+
+	# Everything else, including /api/*, goes to Next.js, which proxies /api to the backend.
+	handle {
+		reverse_proxy frontend:3000
+	}
+}
